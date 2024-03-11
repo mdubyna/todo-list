@@ -9,7 +9,7 @@ class Task(models.Model):
     tags = models.ManyToManyField("Tag")
 
     def __str__(self) -> str:
-        return f"{self.deadline} - {self.done}"
+        return self.content
 
 
 class Tag(models.Model):
